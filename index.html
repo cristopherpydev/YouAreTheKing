@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You are the king</title>
+    <link rel="icon" type="image/x-icon" href="./assets/crown-vector.png">
+    <link rel="stylesheet" href="./styles/ingame.css">
+</head>
+<body>
+<div class="header-comp" id="header-comp">
+    <h1 class="game-header">You are the</h1>
+    <img src="./assets/crown-vector.png" class="crown" alt="" width="200px" height="200px">
+</div>
+<button class="start-button" onclick="startGame()" id="start-button">Start game!</button>
+<h1 class="days" id="days">Days at the throne: 1</h1>
+<div class="UI-wrapper" id="wrapper">
+<div class="card">
+    <h1 class="situation" id="situation">The situation</h1>
+    <img src="./assets/shield-icon.png" alt="icon" id="icon" width="100px" height="100px">
+    <p class="descriptor" id="descriptor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro distinctio sint alias, non cumque molestias hic sapiente at quaerat delectus ipsam, obcaecati ad, blanditiis rem. Fugit ducimus quas totam voluptas?</p>
+    <div class="btn-choices">
+        <button class="btn-left" id="btn-left" value=""></button>
+        <button class="btn-right" id="btn-right" value=""></button>
+    </div>
+</div>
+    <div class="metrics">
+        <div class="metric-row-one">
+            <div class="metric-social">
+                <progress class="progress-social" value="1" max="1"></progress>
+                <h1>Social</h1>
+                <img src="./assets/social-icon.png" alt="" height="54px" width="54px">                
+            </div>
+            <div class="metric-defense">
+                <progress class="progress-defense" value="1" max="1"></progress>
+                <h1>Defense</h1>
+                <img src="./assets/shield-icon.png" alt="" height="54px" width="54px">
+
+            </div>
+        </div>
+        <div class="metric-row-two">
+            <div class="metric-economy">
+                <progress class="progress-economy" value="1" max="1"></progress>
+                <h1>Economy</h1>
+                <img src="./assets/diamon-icon.png" alt="" height="54px" width="54px">
+
+            </div>
+            <div class="metric-religion">
+                <progress class="progress-religion" value="1" max="1"></progress>
+                <h1>Religion</h1>
+                <img src="./assets/candle-vector.png" alt="" height="54px" width="54px">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="./core/buttonController.js"></script>
+<script src="./core/cardHandler.js" type="module"></script>
+
+</html>
