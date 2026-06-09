@@ -29,7 +29,7 @@ async function startGame(){
 async function getInitialValues() {
     /* = = = = = = = = FETCHING DATA PROCESS = = = = = = = = = */
 
-    const request = await fetch("../data/global_metrics_data.json");
+    const request = await fetch("./data/global_metrics_data.json");
     const data = await request.json();
     console.log(data);
     return data

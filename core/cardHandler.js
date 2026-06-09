@@ -112,7 +112,7 @@ function prepareUI(prompt){
 }
 
 async function getData(){
-    const request = await fetch('../data/cards.json')
+    const request = await fetch('./data/cards.json')
     const data = await request.json();
     return data
 }
