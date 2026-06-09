@@ -12,7 +12,7 @@
     <h1 class="game-header">You are the</h1>
     <img src="./assets/crown-vector.png" class="crown" alt="" width="200px" height="200px">
 </div>
-<button class="start-button" onclick="startGame()" id="start-button">Start game!</button>
+<button class="start-button" id="start-button">Start game!</button>
 <h1 class="days" id="days">Days at the throne: 1</h1>
 <div class="UI-wrapper" id="wrapper">
 <div class="card">
@@ -27,12 +27,12 @@
     <div class="metrics">
         <div class="metric-row-one">
             <div class="metric-social">
-                <progress class="progress-social" value="1" max="1"></progress>
+                <progress class="progress-social" value="1" max="1" id="social-bar"></progress>
                 <h1>Social</h1>
                 <img src="./assets/social-icon.png" alt="" height="54px" width="54px">                
             </div>
             <div class="metric-defense">
-                <progress class="progress-defense" value="1" max="1"></progress>
+                <progress class="progress-defense" value="1" max="1" id="defense-bar"></progress>
                 <h1>Defense</h1>
                 <img src="./assets/shield-icon.png" alt="" height="54px" width="54px">
 
@@ -40,13 +40,13 @@
         </div>
         <div class="metric-row-two">
             <div class="metric-economy">
-                <progress class="progress-economy" value="1" max="1"></progress>
+                <progress class="progress-economy" value="1" max="1" id="economy-bar"></progress>
                 <h1>Economy</h1>
                 <img src="./assets/diamon-icon.png" alt="" height="54px" width="54px">
 
             </div>
             <div class="metric-religion">
-                <progress class="progress-religion" value="1" max="1"></progress>
+                <progress class="progress-religion" value="1" max="1" id="religion-bar"></progress>
                 <h1>Religion</h1>
                 <img src="./assets/candle-vector.png" alt="" height="54px" width="54px">
 
@@ -55,8 +55,12 @@
     </div>
 </div>
 
+<footer class="credits">
+    <p>Author: R3D</p>
+    <p>Version: 0.0.1 alpha</p>
+</footer>
 </body>
-<script src="./core/buttonController.js"></script>
+<script src="./core/buttonController.js" type="module"></script>
 <script src="./core/cardHandler.js" type="module"></script>
 
 </html>
