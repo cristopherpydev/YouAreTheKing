@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Cinzel+Decorative:wght@400;700;900&family=Eagle+Lake&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
-
+html{
+    height: 100%;
+}
 body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding: 0;
     margin: 0;
     background-color: rgb(210, 86, 179);
+
+    /* animation: change-color 3s infinite alternate; */
+}
+.global-wrapper{
+    flex: 1;
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* animation: change-color 3s infinite alternate; */
 }
 
 @keyframes change-color {
@@ -178,10 +187,13 @@ progress::-webkit-progress-bar {
 .credits{
     margin-top: 40px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    background-color: white;
-    border: 5px dotted gold;
-    border-radius: 5px;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    font-family: "Eagle Lake", serif;
+}
+footer{
+    margin-top: auto;
 }
