@@ -27,6 +27,7 @@ body{
 }
 
 .days{
+    display: none;
     font-family: "Eagle Lake", serif;
     color: white;
 }
@@ -174,3 +175,13 @@ progress::-webkit-progress-bar {
 
 .progress-religion::-webkit-progress-value { background-color: #9c27b0; }
 .progress-religion::-moz-progress-bar { background-color: #9c27b0; }
+.credits{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border: 5px dotted gold;
+    border-radius: 5px;
+}
