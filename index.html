@@ -14,7 +14,7 @@
             <img src="./assets/crown-vector.png" class="crown" alt="" width="200px" height="200px">
             </div>
             <button class="start-button" id="start-button">Start game!</button>
-            <h1 class="days" id="days">Days at the throne: 1</h1>
+            <h1 class="days" id="days">Days at the throne: ...</h1>
             <div class="UI-wrapper" id="wrapper">
             <div class="card">
                 <h1 class="situation" id="situation">The situation</h1>
@@ -57,10 +57,17 @@
             <p>Version: 0.0.1 alpha</p>
             <p>Author: R3D</p>
         </footer>
+<div id="game-over-screen" class="hidden">
+    <div class="modal-box">
+        <h2>You are dead...</h2>
+        <p id="death-reason">...</p>
+        <button id="restart-btn">Restart</button>
+    </div>
+</div>
 </body>
 
 
 <script src="./core/buttonController.js" type="module"></script>
-<script src="./core/cardHandler.js" type="module"></script>
+<script src="./core/gameLogic.js" type="module"></script>
 
 </html>
