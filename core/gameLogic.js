@@ -1,6 +1,7 @@
 import { isAliveKing } from "./statusHandler.js";
 
-
+const clickSound = new Audio("../assets/music/click.wav");
+clickSound.preload = "auto";
 const situation = document.getElementById('situation');
 const descriptor = document.getElementById('descriptor');
 const logo = document.getElementById('icon');
@@ -89,7 +90,6 @@ async function leftStage(choiceData){
     updates the UI, 
     calls up for a new card
     */
-    const clickSound = new Audio("../assets/music/click.wav");
     clickSound.play();
     daysCounter+=1
     daysMetric.innerHTML = `Days at the throne: ${daysCounter}`;    
@@ -120,7 +120,6 @@ async function rightStage(choiceData){
     updates the UI, 
     calls up for a new card
     */
-    const clickSound = new Audio("../assets/music/click.wav");
     clickSound.play();
     daysCounter+=1
     daysMetric.innerHTML = `Days at the throne: ${daysCounter}`;    
