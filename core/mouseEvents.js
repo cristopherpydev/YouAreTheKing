@@ -11,7 +11,7 @@ rightBtn.addEventListener("mouseout", resetGlowUp)
 
 function glowUpMetrics(){
     /* glows up the metrics to give visual feedback to the users */
-    this.style.animation = "glow 1.5s infinite alternate";
+    this.style.animation = "glow 0.5s infinite alternate";
 }
 
 function resetGlowUp(){

@@ -36,10 +36,10 @@ const metrics = [
     }]
 
 const uris = {
-    "economy": "./assets/diamon-icon.png",
+    "economy": "./assets/economy-icon.png",
     "social": "./assets/social-icon.png",
-    "defense": "./assets/shield-icon.png",
-    "religion": "./assets/candle-vector.png",
+    "defense": "./assets/defense-icon.png",
+    "religion": "./assets/religion-icon.png",
 };
 
 const values = {
@@ -89,6 +89,8 @@ async function leftStage(choiceData){
     updates the UI, 
     calls up for a new card
     */
+    const clickSound = new Audio("../assets/music/click.wav");
+    clickSound.play();
     daysCounter+=1
     daysMetric.innerHTML = `Days at the throne: ${daysCounter}`;    
     const dataset = choiceData["quirks_left"];
@@ -118,6 +120,8 @@ async function rightStage(choiceData){
     updates the UI, 
     calls up for a new card
     */
+    const clickSound = new Audio("../assets/music/click.wav");
+    clickSound.play();
     daysCounter+=1
     daysMetric.innerHTML = `Days at the throne: ${daysCounter}`;    
     const dataset = choiceData["quirks_right"];
