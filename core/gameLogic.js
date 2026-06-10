@@ -1,7 +1,9 @@
 import { isAliveKing } from "./statusHandler.js";
-
-const clickSound = new Audio("./assets/music/click.wav");
-clickSound.preload = "auto";
+import { startGame } from "./buttonController.js";
+import { playClick, playLoopTheme, stopLoopTheme } from "./soundManager.js";
+import { clickSound, theme } from "./soundManager.js";
+import { addDay } from "./buttonController.js";
+const restartBtn = document.getElementById('restart-btn')
 const situation = document.getElementById('situation');
 const descriptor = document.getElementById('descriptor');
 const logo = document.getElementById('icon');
@@ -16,8 +18,6 @@ const metricDefense = document.getElementById('defense-bar');
 const metricReligion = document.getElementById('religion-bar');
 const metricEconomy = document.getElementById('economy-bar');
 const daysMetric = document.getElementById('days');
-let daysCounter = 1;
-daysMetric.innerHTML = `Days at the throne: ${daysCounter}`;    
 
 const metrics = [
     {
@@ -64,6 +64,7 @@ prepareUI(cardText);
 
 leftBtn.addEventListener('click', () => leftStage(cardText));
 rightBtn.addEventListener('click', () => rightStage(cardText));
+restartBtn.addEventListener('click', () => startGame())
 
 
 
@@ -75,15 +76,6 @@ rightBtn.addEventListener('click', () => rightStage(cardText));
 
 */
 
-export function onRestart(){
-    metricSocial.value = 0.5;
-    metricDefense.value = 0.5;
-    metricReligion.value = 0.5;
-    metricEconomy.value  = 0.5;
-    let daysCounter = 1;
-    daysMetric.innerHTML = `Days at the throne: ${daysCounter}`;    
-
-}
 
 async function leftStage(choiceData){
     /* updates the global score, 
@@ -91,8 +83,7 @@ async function leftStage(choiceData){
     calls up for a new card
     */
     clickSound.play();
-    daysCounter+=1
-    daysMetric.innerHTML = `Days at the throne: ${daysCounter}`;    
+    addDay();
     const dataset = choiceData["quirks_left"];
     const q1 = choiceData["quirks_left"][0];
     const q2 = choiceData["quirks_left"][1];
@@ -120,9 +111,8 @@ async function rightStage(choiceData){
     updates the UI, 
     calls up for a new card
     */
-    clickSound.play();
-    daysCounter+=1
-    daysMetric.innerHTML = `Days at the throne: ${daysCounter}`;    
+    playClick(clickSound)
+    addDay();
     const dataset = choiceData["quirks_right"];
     const q1 = choiceData["quirks_right"][0];
     const q2 = choiceData["quirks_right"][1];
@@ -232,5 +222,6 @@ function gameOverScreen(motif){
             deathReason.innerHTML = "Your god have punished you with a deathly plague."  
             break;
     }
+    stopLoopTheme(theme)
     gameOverOverlay.classList.remove('hidden');
 }

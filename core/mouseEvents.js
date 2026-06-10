@@ -17,3 +17,5 @@ function glowUpMetrics(){
 function resetGlowUp(){
     this.style.animation = "none";
 }
+
+
