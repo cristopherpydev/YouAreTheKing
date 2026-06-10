@@ -1,6 +1,6 @@
 import { isAliveKing } from "./statusHandler.js";
 
-const clickSound = new Audio("../assets/music/click.wav");
+const clickSound = new Audio("./assets/music/click.wav");
 clickSound.preload = "auto";
 const situation = document.getElementById('situation');
 const descriptor = document.getElementById('descriptor');
