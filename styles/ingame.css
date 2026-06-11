@@ -24,6 +24,8 @@ body{
     background-image: url("../assets/landscape_0000_1_trees.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 .global-wrapper{
     flex: 1;
@@ -67,13 +69,64 @@ body{
     font-family: "Eagle Lake", serif;
     font-size: 16px;
 }
+.tutorial-content{
+    font-size: 20px;
+    background-image: url("../assets/window_journal.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90%;
+    padding: 30px;
+    text-align: justify;
+    font-family: "Eagle Lake", serif;
+    font-size: 16px;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.tutorial-content img{
+    max-width: 120px;
+    max-height: 120px;
 
+}
+.tutorial{
+    display: none;
+    
+}
+
+.goto-buttons{
+    display: flex;
+    align-content: space-around;
+    gap: 50px;
+}
+.prev-button, .next-button{
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    background-image: url("../assets/btnChoice.png");
+    color: white;
+    background-size: 100% 100%;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.close-tutorial{
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    background-image: url("../assets/btnClose.png");
+    color: white;
+    background-size: 100% 100%;
+    font-size: 30px;
+    padding: 10px;    
+}
 .start-button{
     cursor: pointer;
     background-color: transparent;
     border: none;
     outline: none;
-    background-image: url("../assets/btn_start.png");
+    background-image: url("../assets/btn.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -95,12 +148,12 @@ body{
     background-color: transparent;
     border: none;
     outline: none;
-    border: 1px;
-    border-radius: 2px;
-    padding: 10px;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+    font-family: "Eagle Lake", serif;
     font-weight: bold;
-    background-image: url("../assets/rock_bar.png");
+    background-image: url("../assets/btn.png");
     background-size: 100% 100%;
 }
 .btn-left{
@@ -136,6 +189,18 @@ body{
     align-items: center;
     padding: 30px;
     max-width: 350px;
+}
+
+.card-tutorial{
+    flex: 1;
+    background-image: url("../assets/window_stash.png");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    max-width: 350px;
+
 }
 
 .situation{
@@ -275,9 +340,11 @@ footer{
 
 @keyframes glow {
     from {
-        filter: drop-shadow(0 0 10px #fbd393) drop-shadow(0 0 20px #fbd393) brightness(1.2);
+        filter: drop-shadow(0 0 10px #8bc976) drop-shadow(0 0 20px #8bc976) brightness(1.2);
     }
     to {
-        filter: drop-shadow(0 0 10px #fbd393) drop-shadow(0 0 20px #fbd393) brightness(1.2);
+        filter: drop-shadow(0 0 10px #8bc976) drop-shadow(0 0 20px #8bc976) brightness(1.2);
     }
 }
+
+/* fbd393 */

@@ -37,10 +37,30 @@ const metrics = [
     }]
 
 const uris = {
-    "economy": "./assets/economy-icon.png",
-    "social": "./assets/social-icon.png",
-    "defense": "./assets/defense-icon.png",
-    "religion": "./assets/religion-icon.png",
+    // stats
+    economy: "./assets/economy-icon.png",
+    social: "./assets/social-icon.png",
+    defense: "./assets/defense-icon.png",
+    religion: "./assets/religion-icon.png",
+
+    // event icons
+    enemies: "./assets/enemies.png",
+    technology: "./assets/technology.png",
+    plague: "./assets/pest.png",
+    clash: "./assets/clash.png",
+    chosen: "./assets/chosen.png",
+    rich: "./assets/rich.png",
+    barbarian: "./assets/barbarian.png",
+    crop: "./assets/crop.png",
+    ring: "./assets/ring.png",
+    treason: "./assets/treason.png",
+    water: "./assets/water.png",
+    corrupt: "./assets/corrupt.png",
+    people: "./assets/people.png",
+    weep: "./assets/weep.png",
+    bandit: "./assets/bandit.png",
+    witch: "./assets/witch.png",
+    gear: "./assets/gear.png"
 };
 
 const values = {
@@ -153,10 +173,6 @@ function prepareUI(prompt){
     const logoText = prompt.icon;
     console.log(logo.src);
     logo.src = uris[logoText];
-
-    //quirks_left
-    //quirks_right
-
 }
 
 async function getData(){

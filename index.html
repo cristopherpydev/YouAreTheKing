@@ -15,6 +15,21 @@
              <h1 class="game-header">King</h1>
             </div>
             <button class="start-button" id="start-button">Start game!</button>
+            <button class="start-button" id="tutorial-button">Tutorial</button>
+            <div class="tutorial" id="card-tutorial">
+                <div class="card-tutorial">
+                    <h1 class="situation">Tutorial</h1>
+                    <div class="tutorial-content">
+                        <p id="tutorial-text">foo text for a tutorial...</p>
+                        <img src="" alt="" id="tutorial-img">
+                    </div>
+                    <div class="goto-buttons">
+                        <button class="prev-button" id="prev-button"><</button>
+                        <button class="next-button" id="next-button">></button>                        
+                    </div>
+                    <button class="close-tutorial" id="close-tutorial">X</button>
+                </div>
+            </div>
             <h1 class="days" id="days">Days at the throne: ...</h1>
             <div class="UI-wrapper" id="wrapper">
             <div class="card">
@@ -66,6 +81,7 @@
 
 <script src="./core/buttonController.js" type="module"></script>
 <script src="./core/gameLogic.js" type="module"></script>
-<script src="./core/mouseEvents.js"></script>
+<script src="./core/mouseEvents.js" type="module"></script>
+<script src="./core/tutorial.js" type="module"></script>
 
 </html>

@@ -2,7 +2,7 @@
     {
         "name": "An insurrection of the Anarchists",
         "descriptor": "Your majesty! The townfolk have started to set riots! We must do something!",
-        "icon": "social",
+        "icon": "enemies",
         "type": "social",
         "quirks_left": ["economy_up", "social_down"],
         "quirks_right": ["economy_down", "social_up"],
@@ -12,11 +12,11 @@
     {
         "name": "Tension between nations",
         "descriptor": "My king! Lately we have noticed tension between our nation and our main competitor in the borderlands. What should we do?",
-        "icon": "defense",
+        "icon": "technology",
         "type": "defense",
         "quirks_left": ["social_down", "defense_up"],
         "quirks_right": ["economy_down", "social_down"],
-        "left": "Recruit the townfolk.",
+        "left": "To arms!",
         "right": "Try diplomacy."
     },
     {
@@ -31,8 +31,8 @@
     },
     {
         "name": "The Great Plague",
-        "descriptor": "A mysterious sickness is spreading through the slums. Should we quarantine the city?",
-        "icon": "social",
+        "descriptor": "A mysterious plague is spreading through the slums. Should we quarantine the city?",
+        "icon": "plague",
         "type": "social",
         "quirks_left": ["social_up", "economy_down"],
         "quirks_right": ["social_down", "defense_down"],
@@ -42,7 +42,7 @@
     {
         "name": "Viking Longships",
         "descriptor": "Sails have been spotted on the horizon! They come for our gold!",
-        "icon": "defense",
+        "icon": "clash",
         "type": "defense",
         "quirks_left": ["defense_up", "economy_down"],
         "quirks_right": ["economy_down", "social_down"],
@@ -51,8 +51,8 @@
     },
     {
         "name": "Divine Vision",
-        "descriptor": "A local peasant claims to have seen the Virgin. People want a cathedral built on that spot.",
-        "icon": "religion",
+        "descriptor": "A local peasant claims to have seen a saint. People want a cathedral built on that spot.",
+        "icon": "chosen",
         "type": "religion",
         "quirks_left": ["religion_up", "economy_down"],
         "quirks_right": ["religion_down", "social_up"],
@@ -62,7 +62,7 @@
     {
         "name": "Trade Monopoly",
         "descriptor": "A powerful guild wants exclusive rights to sell silk. They offer a huge upfront payment.",
-        "icon": "economy",
+        "icon": "rich",
         "type": "economy",
         "quirks_left": ["economy_up", "social_down"],
         "quirks_right": ["social_up", "economy_down"],
@@ -72,7 +72,7 @@
     {
         "name": "Barbarian Mercenaries",
         "descriptor": "We can hire northern warriors to bolster our guard, but they are rowdy and violent.",
-        "icon": "defense",
+        "icon": "barbarian",
         "type": "defense",
         "quirks_left": ["defense_up", "social_down"],
         "quirks_right": ["defense_down", "economy_up"],
@@ -82,7 +82,7 @@
     {
         "name": "Inquisition Request",
         "descriptor": "The High Priest wants to hunt down 'thinkers' who question the crown.",
-        "icon": "religion",
+        "icon": "chosen",
         "type": "religion",
         "quirks_left": ["religion_up", "social_down"],
         "quirks_right": ["religion_down", "social_up"],
@@ -92,7 +92,7 @@
     {
         "name": "Bumper Harvest",
         "descriptor": "The fields are overflowing! Should we store the grain for war or sell it to neighbors?",
-        "icon": "economy",
+        "icon": "crop",
         "type": "economy",
         "quirks_left": ["defense_up", "economy_down"],
         "quirks_right": ["economy_up", "social_up"],
@@ -102,7 +102,7 @@
     {
         "name": "Royal Marriage",
         "descriptor": "An alliance with the Eastern Empire requires you to marry their strange princess.",
-        "icon": "social",
+        "icon": "ring",
         "type": "social",
         "quirks_left": ["defense_up", "social_down"],
         "quirks_right": ["social_up", "defense_down"],
@@ -112,7 +112,7 @@
     {
         "name": "The Spy Master",
         "descriptor": "I have found a traitor in your inner circle. Shall I 'remove' him quietly?",
-        "icon": "defense",
+        "icon": "treason",
         "type": "defense",
         "quirks_left": ["defense_up", "social_down"],
         "quirks_right": ["defense_down", "social_down"],
@@ -122,7 +122,7 @@
     {
         "name": "Drought",
         "descriptor": "The river has dried up. The peasants are dying of thirst.",
-        "icon": "social",
+        "icon": "water",
         "type": "social",
         "quirks_left": ["social_up", "economy_down"],
         "quirks_right": ["social_down", "religion_up"],
@@ -132,7 +132,7 @@
     {
         "name": "Corruption Scandal",
         "descriptor": "Your treasurer has been stealing. If we punish him, we lose his financial expertise.",
-        "icon": "economy",
+        "icon": "corrupt",
         "type": "economy",
         "quirks_left": ["social_up", "economy_down"],
         "quirks_right": ["economy_up", "social_down"],
@@ -141,8 +141,8 @@
     },
     {
         "name": "Crusade Call",
-        "descriptor": "The Pope demands we join the holy war in the desert lands.",
-        "icon": "religion",
+        "descriptor": "The High Priest demands we join the holy war in the desert lands.",
+        "icon": "clash",
         "type": "religion",
         "quirks_left": ["religion_up", "defense_down"],
         "quirks_right": ["religion_down", "defense_up"],
@@ -152,7 +152,7 @@
     {
         "name": "New Technology",
         "descriptor": "An alchemist claims to have invented 'Black Powder'. It's expensive but deadly.",
-        "icon": "defense",
+        "icon": "gear",
         "type": "defense",
         "quirks_left": ["defense_up", "economy_down"],
         "quirks_right": ["economy_up", "defense_down"],
@@ -162,7 +162,7 @@
     {
         "name": "Peasant Festival",
         "descriptor": "The people want a week-long feast to celebrate your reign. It will be costly.",
-        "icon": "social",
+        "icon": "people",
         "type": "social",
         "quirks_left": ["social_up", "economy_down"],
         "quirks_right": ["social_down", "economy_up"],
@@ -172,7 +172,7 @@
     {
         "name": "The Weeping Statue",
         "descriptor": "A statue is crying blood. Thousands are flocking to see it, blocking the trade roads.",
-        "icon": "religion",
+        "icon": "weep",
         "type": "religion",
         "quirks_left": ["religion_up", "economy_down"],
         "quirks_right": ["economy_up", "religion_down"],
@@ -182,7 +182,7 @@
     {
         "name": "Bandit King",
         "descriptor": "A bandit has taken over the northern right. He demands a bribe to let merchants through.",
-        "icon": "economy",
+        "icon": "bandit",
         "type": "economy",
         "quirks_left": ["economy_up", "defense_down"],
         "quirks_right": ["defense_up", "economy_down"],
@@ -192,7 +192,7 @@
     {
         "name": "Witch Hunt",
         "descriptor": "A girl is accused of cursing the cows. The mob wants her burned.",
-        "icon": "religion",
+        "icon": "witch",
         "type": "religion",
         "quirks_left": ["religion_up", "social_down"],
         "quirks_right": ["social_up", "religion_down"],

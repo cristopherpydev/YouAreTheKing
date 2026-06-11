@@ -3,18 +3,18 @@ const rightBtn = document.getElementById('btn-right');
 const leftBtnSel = document.querySelector(".btn-left");
 const rightBtnSel = document.querySelector(".btn-right");
 
-leftBtn.addEventListener("mouseover", glowUpMetrics)
-leftBtn.addEventListener("mouseout", resetGlowUp)
+leftBtn.addEventListener("mouseover", glowUp)
+leftBtn.addEventListener("mouseout", glowDown)
 
-rightBtn.addEventListener("mouseover", glowUpMetrics)
-rightBtn.addEventListener("mouseout", resetGlowUp)
+rightBtn.addEventListener("mouseover", glowUp)
+rightBtn.addEventListener("mouseout", glowDown)
 
-function glowUpMetrics(){
+export function glowUp(){
     /* glows up the metrics to give visual feedback to the users */
     this.style.animation = "glow 0.5s infinite alternate";
 }
 
-function resetGlowUp(){
+export function glowDown(){
     this.style.animation = "none";
 }
 
