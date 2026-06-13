@@ -1,5 +1,6 @@
 export const clickSound = new Audio("./assets/music/click.wav");
 export const theme = new Audio("./assets/music/loopmusic.mp3")
+theme.volume = 0.2;
 theme.loop = true;
 clickSound.preload = "auto";
 

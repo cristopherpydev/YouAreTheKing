@@ -60,7 +60,19 @@ const uris = {
     weep: "./assets/weep.png",
     bandit: "./assets/bandit.png",
     witch: "./assets/witch.png",
-    gear: "./assets/gear.png"
+    gear: "./assets/gear.png",
+    castle: "./assets/castle.png",
+    book: "./assets/book.png",
+    crown: "./assets/crown.png",
+    scroll: "./assets/scroll.png",
+    potion: "./assets/potion.png",
+    anchor: "./assets/anchor.png",
+    ingot: "./assets/ingot.png",
+    apple: "./assets/apple.png",
+    fist: "./assets/fist.png",
+    temple: "./assets/temple.png",
+    mask: "./assets/mask.png",
+    dragon: "./assets/dragon.png"
 };
 
 const values = {

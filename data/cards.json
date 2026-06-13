@@ -198,5 +198,205 @@
         "quirks_right": ["social_up", "religion_down"],
         "left": "Burn her.",
         "right": "Set her free."
+    },
+    {
+        "name": "The Royal Architect",
+        "descriptor": "A brilliant architect offers to build a magnificent palace, but the project will drain the treasury.",
+        "icon": "castle",
+        "type": "economy",
+        "quirks_left": ["economy_down", "social_up"],
+        "quirks_right": ["economy_up", "social_down"],
+        "left": "Build the palace.",
+        "right": "Reject the project."
+    },
+    {
+        "name": "The Forgotten Legion",
+        "descriptor": "Old soldiers demand better pay after years of service. They threaten rebellion if ignored.",
+        "icon": "economy",
+        "type": "defense",
+        "quirks_left": ["defense_up", "economy_down"],
+        "quirks_right": ["defense_down", "social_down"],
+        "left": "Reward them.",
+        "right": "Dismiss them."
+    },
+    {
+        "name": "The Merchant Caravan",
+        "descriptor": "A wealthy caravan asks for protection across your lands in exchange for taxes.",
+        "icon": "clash",
+        "type": "economy",
+        "quirks_left": ["economy_up", "defense_down"],
+        "quirks_right": ["economy_down", "defense_up"],
+        "left": "Protect them.",
+        "right": "Let them handle it."
+    },
+    {
+        "name": "The Forbidden Book",
+        "descriptor": "Scholars found an ancient book containing knowledge that challenges old beliefs.",
+        "icon": "book",
+        "type": "religion",
+        "quirks_left": ["social_up", "religion_down"],
+        "quirks_right": ["religion_up", "social_down"],
+        "left": "Study it.",
+        "right": "Destroy it."
+    },
+    {
+        "name": "The Noble Rebellion",
+        "descriptor": "Several nobles claim you have too much power and demand more influence.",
+        "icon": "king",
+        "type": "social",
+        "quirks_left": ["social_up", "defense_down"],
+        "quirks_right": ["defense_up", "social_down"],
+        "left": "Give them a voice.",
+        "right": "Crush the rebellion."
+    },
+    {
+        "name": "The Lost Explorer",
+        "descriptor": "An explorer returns with maps of unknown lands full of resources.",
+        "icon": "scroll",
+        "type": "economy",
+        "quirks_left": ["economy_up", "defense_down"],
+        "quirks_right": ["defense_up", "economy_down"],
+        "left": "Fund an expedition.",
+        "right": "Prepare for invasion."
+    },
+    {
+        "name": "The Royal Physician",
+        "descriptor": "Your doctor proposes a new medicine, but some priests call it unnatural.",
+        "icon": "potion",
+        "type": "social",
+        "quirks_left": ["social_up", "religion_down"],
+        "quirks_right": ["religion_up", "social_down"],
+        "left": "Approve the medicine.",
+        "right": "Ban it."
+    },
+    {
+        "name": "The Pirate Threat",
+        "descriptor": "Pirates are attacking coastal villages and stealing your trade ships.",
+        "icon": "anchor",
+        "type": "defense",
+        "quirks_left": ["defense_up", "economy_down"],
+        "quirks_right": ["economy_up", "defense_down"],
+        "left": "Build a navy.",
+        "right": "Negotiate."
+    },
+    {
+        "name": "The Golden Mine",
+        "descriptor": "Miners discover a massive gold vein beneath a mountain.",
+        "icon": "ingot",
+        "type": "economy",
+        "quirks_left": ["economy_up", "social_down"],
+        "quirks_right": ["social_up", "economy_down"],
+        "left": "Exploit the mine.",
+        "right": "Protect the land."
+    },
+    {
+        "name": "The Secret Alliance",
+        "descriptor": "A neighboring kingdom offers a secret pact against your enemies.",
+        "icon": "scroll",
+        "type": "defense",
+        "quirks_left": ["defense_up", "social_down"],
+        "quirks_right": ["social_up", "defense_down"],
+        "left": "Accept the alliance.",
+        "right": "Stay neutral."
+    },
+    {
+        "name": "The Hungry Masses",
+        "descriptor": "Food prices are rising and the people demand immediate action.",
+        "icon": "apple",
+        "type": "social",
+        "quirks_left": ["social_up", "economy_down"],
+        "quirks_right": ["economy_up", "social_down"],
+        "left": "Open the royal granaries.",
+        "right": "Raise prices."
+    },
+    {
+        "name": "The Ancient Relic",
+        "descriptor": "A mysterious artifact is found. Some believe it holds divine power.",
+        "icon": "fist",
+        "type": "religion",
+        "quirks_left": ["religion_up", "social_down"],
+        "quirks_right": ["social_up", "religion_down"],
+        "left": "Worship it.",
+        "right": "Investigate it."
+    },
+    {
+        "name": "The Training Grounds",
+        "descriptor": "Generals request funds to create a stronger and more disciplined army.",
+        "icon": "temple",
+        "type": "defense",
+        "quirks_left": ["defense_up", "economy_down"],
+        "quirks_right": ["economy_up", "defense_down"],
+        "left": "Train the army.",
+        "right": "Focus on commerce."
+    },
+    {
+        "name": "The Royal Theater",
+        "descriptor": "Artists ask for funding to create plays celebrating your reign.",
+        "icon": "mask",
+        "type": "social",
+        "quirks_left": ["social_up", "economy_down"],
+        "quirks_right": ["economy_up", "social_down"],
+        "left": "Support the arts.",
+        "right": "Cut the funding."
+    },
+    {
+        "name": "The Rebel Leader",
+        "descriptor": "A popular rebel offers peace if you grant him a position in your court.",
+        "icon": "corrupt",
+        "type": "social",
+        "quirks_left": ["social_up", "defense_down"],
+        "quirks_right": ["defense_up", "social_down"],
+        "left": "Welcome him.",
+        "right": "Imprison him."
+    },
+    {
+        "name": "The Foreign Plague Cure",
+        "descriptor": "A foreign doctor claims to have a cure, but demands a huge payment.",
+        "icon": "potion",
+        "type": "social",
+        "quirks_left": ["social_up", "economy_down"],
+        "quirks_right": ["economy_up", "social_down"],
+        "left": "Pay the doctor.",
+        "right": "Refuse."
+    },
+    {
+        "name": "The Dragon Legend",
+        "descriptor": "Villagers claim a dragon sleeps beneath the mountains and fear awakening it.",
+        "icon": "dragon",
+        "type": "religion",
+        "quirks_left": ["religion_up", "defense_down"],
+        "quirks_right": ["defense_up", "religion_down"],
+        "left": "Honor the legend.",
+        "right": "Send explorers."
+    },
+    {
+        "name": "The Border Fortress",
+        "descriptor": "A general proposes building a fortress near the enemy border.",
+        "icon": "castle",
+        "type": "defense",
+        "quirks_left": ["defense_up", "economy_down"],
+        "quirks_right": ["economy_up", "defense_down"],
+        "left": "Build it.",
+        "right": "Save the money."
+    },
+    {
+        "name": "The Festival of Kings",
+        "descriptor": "The people want a massive celebration to honor the dynasty.",
+        "icon": "people",
+        "type": "social",
+        "quirks_left": ["social_up", "economy_down"],
+        "quirks_right": ["economy_up", "social_down"],
+        "left": "Celebrate.",
+        "right": "Cancel it."
+    },
+    {
+        "name": "The Royal Assassination",
+        "descriptor": "A mysterious assassin has been captured. We can interrogate him or execute him.",
+        "icon": "treason",
+        "type": "defense",
+        "quirks_left": ["defense_up", "social_down"],
+        "quirks_right": ["social_up", "defense_down"],
+        "left": "Interrogate him.",
+        "right": "Show mercy."
     }
 ]
